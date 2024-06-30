@@ -1,0 +1,26 @@
+@import "../../styles/_mixins.scss";
+@import "../../styles/_variables.scss";
+
+.footerContainer {
+
+    background: $grey-dark;
+
+    .infoContainer {
+        padding: 2rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        font-weight: 300;
+        gap: 1rem;
+
+        @include mobile {
+            gap: 0.5rem;
+        }
+
+        a {
+            color: $black-light;
+            text-decoration: none;
+        }
+    }
+}

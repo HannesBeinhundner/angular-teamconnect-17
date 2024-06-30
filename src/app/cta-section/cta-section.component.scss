@@ -1,0 +1,45 @@
+@import "../../styles/_mixins.scss";
+@import "../../styles/_variables.scss";
+
+.mainContainer {
+    // background-color: red;
+    padding: 4.5rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+
+    @include tablet {
+        grid-template-columns: 1fr;
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+
+    p {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    button {
+        min-width: max-content;
+    }
+
+}
+
+.imageContainer {
+    img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+}

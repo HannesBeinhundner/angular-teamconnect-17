@@ -1,0 +1,19 @@
+@import "../../styles/_mixins.scss";
+@import "../../styles/_variables.scss";
+
+.container {
+    padding: 1rem 4rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    @include mobile {
+        padding: 2rem;
+    }
+}
